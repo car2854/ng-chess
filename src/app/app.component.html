@@ -1,0 +1,15 @@
+<nav>
+
+  <button type="button" [class]="getClass()" (click)="onClickBackButton()">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <button type="button" (click)="onClickThemeMode()">
+    @if (darkMode()) {
+      <i class="fa-regular fa-moon"></i>
+    }@else {
+      <i class="fa-regular fa-sun"></i>
+    }
+  </button>
+</nav>
+<router-outlet></router-outlet>

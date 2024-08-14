@@ -1,0 +1,33 @@
+:root{
+  --font-color: #F3F3F7;
+  --button-color: #525298;
+  --text-color: #1F1D2C;
+
+  // Chess
+  --chessboard1: #EEEED2;
+  --chessboard2: #769656;
+
+  --possible: #BACA44;
+  --enemy: #BACA44;
+  --selected: #FFFFFF;
+
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[data-theme="dark"]{
+  --font-color: #1F1D2C;
+  --button-color: #525298;
+  --text-color: #F3F3F7;
+
+  // Chess
+  --chessboard1: #C5D6DD;
+  --chessboard2: #7699AF;
+
+  --possible: #6b767a;
+  --enemy: #6b767a;
+  --selected: #FFFFFF;
+}

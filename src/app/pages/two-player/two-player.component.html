@@ -1,0 +1,40 @@
+<div class="game">  
+  <div class="chessboard">
+    @for (row of chess(); track $index; let i = $index) {
+      <div class="row-square">
+        @for (square of row; track $index; let j = $index) {
+          <div [class]="'square ' + square.className" (click)="onClick(i , j)">
+            @if (square.piece){
+              <img [src]="'assets/pieces/' + square.piece.type + '-' + square.piece.color + '.svg'" [alt]=square.piece.type>
+            }
+          </div>
+        }
+      </div>
+    }
+  
+  </div>
+  <div class="lost-pieces">
+    
+    <h1>Turno: {{turn()}}</h1>
+
+    <div class="pieces">
+      <div class="black-piece">
+        @for (piece of getLostPieces('white'); track $index) {
+          <div class="piece">
+            <img [src]="'assets/pieces/' + piece.type + '-' + piece.color + '.svg'" [alt]=piece.type>
+          </div>
+        }
+      </div>
+      <div class="white-piece">
+        @for (piece of getLostPieces('black'); track $index) {
+          <div class="piece">
+            <img [src]="'assets/pieces/' + piece.type + '-' + piece.color + '.svg'" [alt]=piece.type>
+          </div>
+        }
+      </div>
+
+    </div>
+    
+  </div>
+
+</div>

@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: var(--font-color);
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+i{
+  color: var(--text-color);
+  font-size: 40px;
+}
+
+button {
+  cursor: pointer; 
+  border: none; 
+  outline: none;
+  color: white; 
+  padding: 15px 30px;
+  font-size: 16px; 
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+h1, h2, h3, h4, h5{
+  color: var(--text-color);
+}
