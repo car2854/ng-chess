@@ -3,6 +3,7 @@ nav{
   justify-content: space-between;
   padding: 20px;
   button{
+    -webkit-tap-highlight-color: transparent;
     z-index: 5;
     background-color: transparent;
 
@@ -14,7 +15,6 @@ nav{
       animation: move 1s infinite;
     }
   }
-
 
 }
 
