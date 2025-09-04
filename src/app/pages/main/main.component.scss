@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     a {
       transition: .25s;
@@ -84,3 +85,16 @@
   }
 }
 
+
+@media (max-width: 720px) {
+  .menu{
+    .options{
+      gap: 8px;
+      justify-content: space-around;
+      .menu-button {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
