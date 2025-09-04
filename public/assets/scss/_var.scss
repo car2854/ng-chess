@@ -1,5 +1,6 @@
 :root{
   --font-color: #F3F3F7;
+  --font-color-50: rgba(243, 243, 247, 0.5);
   --button-color: #525298;
   --text-color: #1F1D2C;
 
@@ -20,6 +21,7 @@
 }
 [data-theme="dark"]{
   --font-color: #1F1D2C;
+  --font-color-50: rgba(31, 29, 44, 0.5);
   --button-color: #525298;
   --text-color: #F3F3F7;
 
