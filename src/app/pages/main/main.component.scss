@@ -98,3 +98,25 @@
     }
   }
 }
+
+@media (max-width: 410px) {
+  .menu{
+    .options{
+      gap: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .menu-button {
+        width: 150px;
+        height: 150px;
+
+        p {
+          font-size: 16px;
+        }
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
