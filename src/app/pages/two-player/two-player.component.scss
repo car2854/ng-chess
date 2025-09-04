@@ -139,6 +139,12 @@ img{
     gap: 30px;
     flex-direction: column;
 
+    .chessboard {
+
+      width: 70%;
+
+    }
+
     .lost-pieces{
       h1{
         font-size: 7vw;
