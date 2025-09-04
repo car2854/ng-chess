@@ -1,4 +1,4 @@
-<div class="game">  
+<div class="game">
   <div class="chessboard">
     @for (row of chess(); track $index; let i = $index) {
       <div class="row-square">
@@ -11,11 +11,11 @@
         }
       </div>
     }
-  
+
   </div>
   <div class="lost-pieces">
-    
-    <h1>Turno: {{turn()}}</h1>
+
+    <h1>Turno: {{turn() | piece}}</h1>
 
     <div class="pieces">
       <div class="black-piece">
@@ -34,7 +34,7 @@
       </div>
 
     </div>
-    
+
   </div>
 
 </div>

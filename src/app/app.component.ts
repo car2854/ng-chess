@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'chess';
 
   private router = inject(Router);
-  
+
   public darkMode = signal(true);
 
   public getClass = () => {
@@ -24,10 +24,10 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    
+
     const mode = localStorage.getItem('mode') ?? 'dark';
     console.log(mode);
-    
+
     this.darkMode.set(mode === 'dark');
 
     document.documentElement.setAttribute('data-theme', (this.darkMode()) ? 'dark' : 'light')
@@ -38,7 +38,7 @@ export class AppComponent {
     this.darkMode.update((darkMode) => !darkMode);
 
     document.documentElement.setAttribute('data-theme', (this.darkMode()) ? 'dark' : 'light')
-    
+
     localStorage.setItem('mode', (this.darkMode()) ? 'dark' : 'light');
   }
 }

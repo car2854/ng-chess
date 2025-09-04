@@ -1,0 +1,25 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+i{
+  font-size: 100px;
+  opacity: 0.5;
+  animation: toolAnimated 2s infinite;
+  transform-origin: 70% 30%;
+}
+
+@keyframes toolAnimated {
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(40deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
